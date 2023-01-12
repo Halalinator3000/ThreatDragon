@@ -21,7 +21,7 @@
               },
               "position": {
                 "x": 383,
-                "y": 166
+                "y": 167
               },
               "angle": 0,
               "id": "9335b7d2-a8da-41bb-a168-3626d5a2ff27",
@@ -669,17 +669,29 @@
               "angle": 0,
               "id": "da9b20d9-1fbc-45e5-9078-594df466f6fd",
               "z": 17,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "description": "Management- Report wird monatlich gespeichert.",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Tampering",
+                  "title": "Zähler wird manipuliert.",
+                  "description": "Der OTT-Zähler wird mit falschen Werten versorgt und führt zu inkonsistenzen in der Datenbank.",
+                  "mitigation": "Der Zähler lässt sich nur inkrementieren, wenn eine gültige Ticket-ID zur Verfügung steht.",
+                  "threatId": "3c6037d1-0fc3-42c2-ab41-e3978768a274"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "saveMngmtRep"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -696,16 +708,28 @@
               "angle": 0,
               "id": "d57b87b5-4133-4075-987a-c1312d4f4149",
               "z": 18,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "SQL-Injection",
+                  "description": "Durch eine SQL-Injection könnte der Inhalt der Datenbank ausgegeben werden.",
+                  "mitigation": "Überprüfung der Querys auf verdächtige Character.",
+                  "threatId": "b2822880-d007-4ce2-a4ec-9c8c566f5286"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "DB. Mngmnt-Report"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -882,16 +906,28 @@
               "angle": 0,
               "id": "11473c10-b07d-421a-8eff-53b9a5d7992a",
               "z": 24,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "description": "Durch eine SQL-Injection könnte der Inhalt der Datenbank ausgegeben werden.",
+                  "mitigation": "Überprüfung der Querys auf verdächtige Character.",
+                  "title": "SQL-Injection",
+                  "threatId": "6795c970-b283-426f-b17d-1c51aea17318"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "TelNr-DB"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1281,6 +1317,7 @@
               ],
               "z": 35,
               "hasOpenThreats": false,
+              "threats": [],
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -1389,16 +1426,28 @@
               "angle": 0,
               "id": "0f10f904-946a-4e70-a7d4-4eb85483a558",
               "z": 38,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "title": "User wird erpresst",
+                  "description": "Der User wird von jemandem gezwungen sich anzumelden.",
+                  "mitigation": "Jeder User erhält ein zweites Passwort, welches genutzt werden kann, wenn eine Gefahrsituation besteht.",
+                  "threatId": "60aee4d9-77a1-41d0-a49e-fcbb9c2949ca"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "User"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
