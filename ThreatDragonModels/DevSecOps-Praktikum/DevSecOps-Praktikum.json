@@ -291,17 +291,29 @@
               "angle": 0,
               "id": "7de6e710-8fac-4b7a-8f25-46b9df040198",
               "z": 8,
-              "hasOpenThreats": false,
-              "description": "SHA-256",
+              "hasOpenThreats": true,
+              "description": "",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Spoofing",
+                  "title": "Schwache Verschlüsselung wird verwendet",
+                  "description": "Die aktuelle Verschlüsselungslogik ist veraltet.",
+                  "mitigation": "Es wird immer geprüft, ob die Verschlüsselung noch aktuell ist.",
+                  "threatId": "4291ca28-4338-4497-ac4a-e43a1802157b"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Standartkrypt"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
