@@ -421,13 +421,25 @@
                 }
               ],
               "z": 11,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Daten werden abgefangen",
+                  "type": "Denial of service",
+                  "description": "Ein Angreifer fängt durch eine Minm-Attacke alle Daten ab und leitet diese nicht weiter.",
+                  "mitigation": "Überprüfung der Belastung eines Servers. Zählung der Anfragen und Interpretation dieser.",
+                  "threatId": "0b22c3ae-d76b-4754-8f1e-40eb961d1f28"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -493,13 +505,25 @@
                 }
               ],
               "z": 13,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Information disclosure",
+                  "title": "SQL-Injection",
+                  "description": "Aggressor nutzt eine MINTM-Attacke und sendet schädliche Querys an die Datenbank.",
+                  "mitigation": "Querys werden überprüft auf verdächtige Character.",
+                  "threatId": "d426f927-043b-4717-a716-66adb3d7ffe4"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -736,16 +760,28 @@
               "angle": 0,
               "id": "a7e4f25f-1359-4657-89d1-45f79783bfa0",
               "z": 20,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Elevation of privilege",
+                  "title": "Gefälschte OTT'S",
+                  "description": "Es werden gefälschte OTT's gesendet und es wird einem Aggressor dadurch möglich, sich in das System einzuloggen.",
+                  "mitigation": "OTT's werden in jeder Instanz die sie besuchen, mit einer signature bestückt, sodass daraus ersichtlich werden kann, ob diese von einem Kunden ist.",
+                  "threatId": "16c8c13f-9177-416f-aa3b-c9835272e55b"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Allsecure Mobile Phone\nOTT Service"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
