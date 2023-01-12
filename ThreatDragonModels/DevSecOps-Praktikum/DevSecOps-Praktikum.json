@@ -1255,7 +1255,12 @@
               "target": {
                 "id": "da9b20d9-1fbc-45e5-9078-594df466f6fd"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 470,
+                  "y": 123
+                }
+              ],
               "id": "9bfd3779-cf1a-48d4-9682-2be8c87e3db9",
               "labels": [
                 {
@@ -1398,13 +1403,48 @@
                 }
               ],
               "z": 41,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "4adaa48a-0345-4533-a189-64c98c4420dd",
+                  "title": "Datenänderungen",
+                  "type": "Tampering",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "Um zu verhindern, dass es zu ungewollten Veränderungen in der Datenbank seitens eines Kollegen im Management erfolgen, gilt hier nur Read-Only.",
+                  "mitigation": "Um zu verhindern, dass es zu ungewollten Veränderungen in der Datenbank seitens eines Kollegen im Management erfolgen, gilt hier nur Read-Only.",
+                  "threatId": "6dd2d7ec-5b9f-484a-871c-17f344a895ec"
+                },
+                {
+                  "ruleId": "13000296-b17d-4b72-9cc4-f5cc33f80e4c",
+                  "title": "Zugriffsrechte",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "Die Daten sind nur für die Manager von Interesse und könnten an andere Mitarbeiter geraten.",
+                  "mitigation": "Nur die Accounts der Manager können aus der Datenbank lesen.",
+                  "threatId": "c5f83c48-7eab-4b50-9308-1609866392bc"
+                },
+                {
+                  "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
+                  "title": "Verhinderung von DoS",
+                  "type": "Denial of service",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "Die Datenbank könnten durch Fehlerhafte Bedienung seitens des Managements überlastet werden.",
+                  "mitigation": "Management kann nur aus der Datenbank lesen und keine Änderungen vornehmen.",
+                  "threatId": "0b1b97c6-e530-41e6-b769-c44a9c39d371"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             }
