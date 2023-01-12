@@ -38,6 +38,16 @@
                   "description": "Ein Aggressor könnte durch Remote File Inclusion eine Query/Befehl im DB/Server ausführen und einem Account Admin rechte zuteilen.",
                   "mitigation": "Keine Daten werden als Pakete gesendet. Außerdem werden alle Daten die gesendet werden auf dem Typ untersucht und entsprechend behandelt.",
                   "threatId": "f66bd6a8-f0ed-40eb-bff6-77953d0a9eaa"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "type": "Repudiation",
+                  "title": "Ungewöhnliche Anzahl an Aktivitäten",
+                  "description": "Ein Aggressor könnte wiederholt und unauffällig Angriffe ausführen.",
+                  "mitigation": "Die Anzahl von Tickets wird gezählt und interpretiert. Bei verdächtigem Verhalten wird das System überprüft.",
+                  "threatId": "dbe82d91-836f-4927-9f7f-c429cca9210f"
                 }
               ],
               "attrs": {
